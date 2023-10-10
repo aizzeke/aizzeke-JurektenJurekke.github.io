@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Jurekten_Jurekke-home-page</title>
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/slick-theme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/account.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./img/favicon_io (1)/favicon.ico"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="navbar-brand" href="/index.html">Jurekten_Jurekke</a>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../jurekten_jurekke/catalog.html"
+                    >Catalog</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../jurekten_jurekke/about-us.html"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Contacts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../jurekten_jurekke/account.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../jurekten_jurekke/cart.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  <a href="../jurekten_jurekke/catalog.html">Search</a>
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="form-signin w-100 m-auto">
+      <form onsubmit="return formValidation()">
+        <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+        <div class="checkbox mb-3">
+          <label>
+            <input
+              class="btn-remember-me"
+              type="checkbox"
+              value="remember-me"
+            />
+            Remember me
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">
+          Sign up
+        </button>
+        <p id="registrationMessage" class="mt-5 mb-3 text-body-secondary">
+          &copy; 2017–2023
+        </p>
+      </form>
+      <h2 style="text-align: center">Game: Tic Tac Toe</h2>
+      <div id="game">
+        <div style="display: flex; justify-content: center;" class="table">
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td>
+                <div class="inner"></div>
+              </td>
+              <td>
+                <div class="inner"></div>
+              </td>
+              <td>
+                <div class="inner"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="inner"></div>
+              </td>
+              <td>
+                <div class="inner"></div>
+              </td>
+              <td>
+                <div class="inner"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="inner"></div>
+              </td>
+              <td>
+                <div class="inner"></div>
+              </td>
+              <td>
+                <div class="inner"></div>
+              </td>
+            </tr>
+          </table>
+          <div class="winning"></div>
+        </div>
+        <div id="win_block">
+          <span class="winner"></span>
+          <span class="again">Play again!</span>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row footer__inner">
+          <div class="col-12 col-md-6 company__info">
+            <ul class="company__info__inner">
+              <h1 class="company__name">Jurekten_Jurekke</h1>
+              <li class="company__info__item">
+                Astana, residential complex Nova sity 30/3
+              </li>
+              <li class="company__info__item">KZ +7 705 301 6564</li>
+              <li class="company__info__item">kassymkhanov.aizat@gmail.com</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 authors">
+            <div class="about__us">
+              <ul class="about__us__inner">
+                <h1 class="about__us__text">About Us</h1>
+                <li class="authors__name">Kassymkhanov Aizat</li>
+                <li class="authors__name">Rakhimov Dastan</li>
+                <li class="authors__name">Toqsanbai Abulkair</li>
+                <li class="authors__name">Mutashev Darkhan</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="footer__text">Copyright &copy; 2023, Jurekten_Jurekke</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/game.js"></script>
+    <script>
+      function formValidation() {
+        var email = document.getElementById("floatingInput").value;
+        var password = document.getElementById("floatingPassword").value;
+
+        var formData = {
+          email: email,
+          password: password,
+          remember:
+            document.querySelector('input[name="remember"]:checked') !== true,
+        };
+
+        console.log(formData);
+
+        if (email && password) {
+          showSuccessMessage();
+          return false;
+        }
+
+        return false;
+      }
+
+      function showSuccessMessage() {
+        var messageElement = document.getElementById("registrationMessage");
+        messageElement.innerText = "Registration successful!";
+      }
+    </script>
+  </body>
+</html>

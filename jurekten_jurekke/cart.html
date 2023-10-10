@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Jurekten_Jurekke-home-page</title>
+  <link rel="stylesheet" href="../css/slick.css" />
+  <link rel="stylesheet" href="../css/slick-theme.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/cart.css" />
+
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="/index.html">Jurekten_Jurekke</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../jurekten_jurekke/catalog.html">Catalog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../jurekten_jurekke/about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../jurekten_jurekke/account.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../jurekten_jurekke/cart.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="max-height: 60px;"/>
+              <button class="btn btn-outline-success" type="submit">
+                <a href="../jurekten_jurekke/catalog.html">Search</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="cart-first">
+    <h1 style="margin-top: 9%;
+      margin-bottom: 9%;
+        margin-left: 30px;">Shopping cart</h1>
+  </div>
+  <hr />
+  <section style="
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 300px;
+      ">
+    <div class="webcart">
+      <div class="container">
+        <div class="wweebbb">
+          <table class="shop_cart_table">
+            <tr>
+              <th>
+                <table class="shop_cart_table">
+                  <tr>
+                    <th>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="shop_cart_item">
+                            <th><img src="../img/product-0.jpg" class="cart_image"></th>
+                            <td>Afteroom Coat Hanger</td>
+                            <td>$123.06</td>
+                            <td><input type="number" value="1" onchange="updateTotal(this)"></td>
+                            <td class="item_total">$123.06</td>
+                          </tr>
+                          <tr class="shop_cart_item">
+                            <th><img src="../img/product-1.jpg" class="cart_image"></th>
+                            <td>Afteroom Dining Chair</td>
+                            <td>$102.84</td>
+                            <td><input type="number" value="1" onchange="updateTotal(this)"></td>
+                            <td class="item_total">$102.84</td>
+                          </tr>
+                          <tr class="shop_cart_item">
+                            <th><img src="../img/product-2.jpg" class="cart_image"></th>
+                            <td>Bobber Small Pendant Light</td>
+                            <td>$120.05</td>
+                            <td><input type="number" value="1" onchange="updateTotal(this)"></td>
+                            <td class="item_total">$120.05</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="3">Subtotal</td>
+                            <td id="subtotal">$345.95</td>
+                          </tr>
+                          <tr>
+                            <td colspan="3">Tax</td>
+                            <td>$20.00</td>
+                          </tr>
+                          <tr>
+                            <td colspan="3">Total</td>
+                            <td id="total">$365.95</td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </th>
+                  </tr>
+                </table>
+
+                <script>
+                  function updateTotal(input) {
+                    var quantity = input.value;
+                    var priceElement = input.parentNode.previousElementSibling;
+                    var totalElement = input.parentNode.nextElementSibling;
+
+                    var price = parseFloat(priceElement.textContent.replace('$', ''));
+                    var total = price * quantity;
+
+                    totalElement.textContent = '$' + total.toFixed(2);
+
+                    updateSubtotal();
+                  }
+
+                  function updateSubtotal() {
+                    var itemTotalElements = document.getElementsByClassName('item_total');
+                    var subtotalElement = document.getElementById('subtotal');
+                    var subtotal = 0;
+
+                    for (var i = 0; i < itemTotalElements.length; i++) {
+                      var itemTotal = parseFloat(itemTotalElements[i].textContent.replace('$', ''));
+                      subtotal += itemTotal;
+                    }
+
+                    subtotalElement.textContent = '$' + subtotal.toFixed(2);
+
+                    updateTotal();
+                  }
+                </script>
+
+              </th>
+              <th>
+
+                <div class="card_details">
+                  <h3 class="payment_text" style="margin-left: 20px;">Payment info</h3>
+                  <hr />
+                  <label class="payment_text_small" style="margin-left: 20px;">Name on card</label>
+                  <input type="text" id="fname" name="firstname" style="margin-left: 20px;" placeholder="Toksanbay Abilkaiyr" required>
+                  <br>
+                  <br>
+                  <label class="payment_text_small">Card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" style="margin-left: 20px;" placeholder="1111 2222 3333 4444" maxlength="19"
+                    required onkeydown="handleKeyPress(event, ccnum, expirationDate)">
+                  <br>
+                  <br>
+                  <label class="payment_text_small">Expiration Date</label>
+                  <input type="month" name="month" id="expirationDate" style="margin-left: 20px;" class="input_month" required
+                    onkeydown="handleKeyPress(event, expirationDate, cvv)">
+                  <br>
+                  <br>
+                  <label class="payment_text_small">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352" style="margin-left: 20px;" maxlength="3" required>
+
+                  <input type="submit" name="submit_card" value="Submit" id="submitCard" onclick="validateForm(event)">
+                </div>
+
+                <!-- Snackbar -->
+                <div id="snackbar">Please fill in all required fields.</div>
+
+                <script>
+                  function handleKeyPress(event, currentInput, nextInput) {
+                    if (event.keyCode === 13) {
+                      event.preventDefault();
+                      nextInput.focus();
+                    }
+                  }
+
+                  function validateForm(event) {
+                    var requiredInputs = document.querySelectorAll('input[required]');
+                    var isFormValid = true;
+
+                    for (var i = 0; i < requiredInputs.length; i++) {
+                      if (!requiredInputs[i].value) {
+                        isFormValid = false;
+                        break;
+                      }
+                    }
+
+                    if (!isFormValid) {
+                      event.preventDefault();
+                      showSnackbar("Please fill in all required fields.");
+                    } else {
+                      var nameField = document.getElementById("fname");
+                      var nameValue = nameField.value;
+
+                      if (!isLatinName(nameValue)) {
+                        event.preventDefault();
+                        showSnackbar("Name should contain only Latin symbols.");
+                      } else {
+                        // Additional check for other fields if needed
+
+                        // All fields are filled correctly
+                        showSnackbar("You ordered successfully!", "success");
+                      }
+                    }
+                  }
+
+                  function showSnackbar(message, type) {
+                    var snackbar = document.getElementById('snackbar');
+                    snackbar.textContent = message;
+                    snackbar.className = 'show';
+
+                    if (type === "success") {
+                      snackbar.style.backgroundColor = "#2ecc71"; // Set background color for success message
+                    } else {
+                      snackbar.style.backgroundColor = "#333"; // Reset background color for other messages
+                    }
+
+                    setTimeout(function () {
+                      snackbar.className = snackbar.className.replace('show', '');
+                    }, 3000);
+                  }
+
+
+                  function isLatinName(name) {
+                    var latinRegex = /^[a-zA-Z\s]+$/;
+                    return latinRegex.test(name);
+                  }
+
+                  // Get references to the input elements
+                  const ccnum = document.getElementById('ccnum');
+                  const expirationDate = document.getElementById('expirationDate');
+                  const cvv = document.getElementById('cvv');
+
+                  // Set the initial focus on the card number input field
+                  ccnum.focus();
+                </script>
+
+                <script>
+                  const ccnumInput = document.getElementById('ccnum');
+
+                  ccnumInput.addEventListener('input', function (e) {
+                    const input = e.target;
+                    const trimmedValue = input.value.replace(/\s+/g, ''); // Remove existing spaces
+                    const formattedValue = formatCardNumber(trimmedValue);
+                    input.value = formattedValue;
+                  });
+
+                  function formatCardNumber(value) {
+                    const cardNumberRegex = /(\d{1,4})/g;
+                    const formattedValue = value.replace(cardNumberRegex, '$1 ').trim();
+                    return formattedValue;
+                  }
+
+
+                  
+                </script>
+                <script>
+                  function updateTotal(input) {
+                    var quantity = input.value;
+                    var priceElement = input.parentNode.previousElementSibling;
+                    var totalElement = input.parentNode.nextElementSibling;
+                
+                    var price = parseFloat(priceElement.textContent.replace('$', ''));
+                    var total = price * quantity;
+                
+                    totalElement.textContent = '$' + total.toFixed(2);
+                
+                    updateSubtotal();
+                  }
+                
+                  function updateSubtotal() {
+                    var itemTotalElements = document.getElementsByClassName('item_total');
+                    var subtotalElement = document.getElementById('subtotal');
+                    var taxElement = document.querySelector('tfoot tr:nth-child(2) td:last-child');
+                    var totalElement = document.getElementById('total');
+                    var subtotal = 0;
+                
+                    for (var i = 0; i < itemTotalElements.length; i++) {
+                      var itemTotal = parseFloat(itemTotalElements[i].textContent.replace('$', ''));
+                      subtotal += itemTotal;
+                    }
+                
+                    subtotalElement.textContent = '$' + subtotal.toFixed(2);
+                
+                    var tax = parseFloat(taxElement.textContent.replace('$', ''));
+                    var total = subtotal - tax;
+                    totalElement.textContent = '$' + total.toFixed(2);
+                  }
+                </script>
+
+              </th>
+            </tr>
+          </table>
+        </div>
+
+        <script>
+          // Add an event listener to the submit button
+          document.getElementById("submitCard").addEventListener("click", function () {
+            // Get the entered expiration date value
+            var expirationDateInput = document.getElementById("expirationDate").value;
+
+            // Extract month and year from the expiration date
+            var parts = expirationDateInput.split("-");
+            var expirationYear = parseInt(parts[0], 10);
+            var expirationMonth = parseInt(parts[1], 10);
+
+            // Get the current date
+            var currentDate = new Date();
+            var currentYear = currentDate.getFullYear();
+            var currentMonth = currentDate.getMonth() + 1; // Add 1 because months are zero-based
+
+            // Compare the expiration date with the current date
+            if (currentYear > expirationYear || (currentYear === expirationYear && currentMonth > expirationMonth)) {
+              alert("Your card is expired");
+            }
+          });
+        </script>
+
+
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container-fluid">
+      <div class="row footer__inner">
+        <div class="col-12 col-md-6 company__info">
+          <ul class="company__info__inner">
+            <h1 class="company__name">Jurekten_Jurekke</h1>
+            <li class="company__info__item">
+              Astana, residential complex Nova sity 30/3
+            </li>
+            <li class="company__info__item">KZ +7 705 301 6564</li>
+            <li class="company__info__item">kassymkhanov.aizat@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 authors">
+          <div class="about__us">
+            <ul class="about__us__inner">
+              <h1 class="about__us__text">About Us</h1>
+              <li class="authors__name">Kassymkhanov Aizat</li>
+              <li class="authors__name">Rakhimov Dastan</li>
+              <li class="authors__name">Toqsanbai Abulkair</li>
+              <li class="authors__name">Mutashev Darkhan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="footer__text">Copyright &copy; 2023, Jurekten_Jurekke</p>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+    <title>Jurekten_Jurekke-home-page</title>
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/slick-theme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/cart.css" />
+</head>
+<link rel="icon" type="image/x-icon" href="/img/favicon_io (1)/favicon.ico">
+<body>
+  <header class="header" id="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="navbar-brand" href="/index.html">Jurekten_Jurekke</a>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../jurekten_jurekke/catalog.html"
+                    >Catalog</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../jurekten_jurekke/about-us.html"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Contacts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../jurekten_jurekke/account.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../jurekten_jurekke/cart.html">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  <a href="../jurekten_jurekke/catalog.html">Search</a>
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="cart-first">
+      <h1 
+      style="margin-top: 9%;
+      margin-bottom: 9%;
+        margin-left: 30px;">Shopping cart</h1>
+    </div>
+    <hr/>
+    <section
+      style="
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 300px;
+      "
+    >
+      <div class="webcart">
+        <div class="container">
+          <div class="wweebbb">
+            <table class="shop_cart_table">
+              <tr>
+                <th>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>
+                          
+                        </th>
+                        <th>Product</th>
+                        <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="shop_cart_item">
+          <th>
+            <img src="../img/product-0.jpg" class="cart_image">
+      </th>
+          <td>Afteroom Coat Hanger</td>
+          <td>$123.06</td>
+          <td><input type="number" value="1"></td>
+          <td>$123.06</td>
+        </tr>
+        <tr class="shop_cart_item">
+          <th><img src="../img/product-1.jpg" class="cart_image"> </th>
+          <td>Afteroom Dining Chair</td>
+          <td>$102.84</td>
+          <td><input type="number" value="1"></td>
+          <td>$102.84</td>
+        </tr>
+        <tr class="shop_cart_item">
+          <th><img src="../img/product-2.jpg" class="cart_image"> </th>
+          <td>Bobber Small Pendant Light</td>
+          <td>$120.05</td>
+          <td><input type="number" value="1"></td>
+          <td>$120.05</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Subtotal</td>
+          <td>$345.95</td>
+        </tr>
+        <tr>
+          <td colspan="3">Tax</td>
+          <td>$20.00</td>
+        </tr>
+        <tr>
+          <td colspan="3">Total</td>
+          <td>$365.95</td>
+        </tr>
+      </tfoot>
+    </table>
+                </th>
+                <th>
+                  <div class="card_details">
+  <h3 class="payment_text">Payment info</h3>
+  <hr />
+  <br>
+  <br>
+  <label class="payment_text_small">Name on card</label>
+  <p class="input_payment">Toksanbay Abilkaiyr</p>
+  <br>
+  <br>
+  <label class="payment_text_small">Card number</label>
+  <p class="input_payment">**** **** **** 3271</p>
+  <br>
+  <br>
+  <label class="payment_text_small">Expiration Date</label>
+  <input type="month" name="month" id="expirationDate" class="input_month">
+  <br>
+  <br>
+  <label class="payment_text_small">CVV</label>
+  <p class="payment_text_small" style="margin-left: 60px;">***</p>
+  <br>
+  <br>
+  <input type="submit" name="submit_card" value="Submit" id="submitCard">
+</div>
+
+<audio id="failSound">
+  <source src="fail.mp3" type="audio/mpeg">
+  <source src="fail.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  document.getElementById("submitCard").addEventListener("click", function() {
+    var expirationDateInput = document.getElementById("expirationDate").value;
+    var parts = expirationDateInput.split("-");
+    var expirationYear = parseInt(parts[0], 10);
+    var expirationMonth = parseInt(parts[1], 10);
+    var currentDate = new Date();
+    var currentYear = currentDate.getFullYear();
+    var currentMonth = currentDate.getMonth() + 1;
+
+    if (currentYear > expirationYear || (currentYear === expirationYear && currentMonth > expirationMonth)) {
+      alert("Your card is expired");
+      
+      // Play the fail sound
+      var failSound = document.getElementById("failSound");
+      failSound.play();
+    }
+  });
+</script>
+                </th>
+              </tr>
+
+            </table>
+            
+          </div>
+          </div>
+           </div>
+
+
+    </section>
+     <footer>
+      <div class="container-fluid">
+        <div class="row footer__inner">
+          <div class="col-12 col-md-6 company__info">
+            <ul class="company__info__inner">
+              <h1 class="company__name">Jurekten_Jurekke</h1>
+              <li class="company__info__item">
+                Astana, residential complex Nova sity 30/3
+              </li>
+              <li class="company__info__item">KZ +7 705 301 6564</li>
+              <li class="company__info__item">kassymkhanov.aizat@gmail.com</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 authors">
+            <div class="about__us">
+              <ul class="about__us__inner">
+                <h1 class="about__us__text">About Us</h1>
+                <li class="authors__name">Kassymkhanov Aizat</li>
+                <li class="authors__name">Rakhimov Dastan</li>
+                <li class="authors__name">Toqsanbai Abulkair</li>
+                <li class="authors__name">Mutashev Darkhan</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="footer__text">Copyright &copy; 2023, Jurekten_Jurekke</p>
+      </div>
+    </footer>
+</body>
+</html> -->

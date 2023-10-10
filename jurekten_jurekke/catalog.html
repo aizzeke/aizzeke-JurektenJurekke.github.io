@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="/img/favicon_io (1)/favicon.ico">
+  <link rel="stylesheet" href="../css/catalog.css">
+  <style>
+    *,
+    /*                                  general style for all pages >                                       */
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto,
+        oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue",
+        Arial, sans-serif;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      height: 100%;
+    }
+
+    body {
+      position: relative;
+      min-height: 100%;
+      color: #555555;
+      background-color: #ffffff;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    li {
+      padding-left: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    hr {
+      color: #aaa;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: #394352;
+    }
+
+    nav a:hover {
+      border-bottom: 1px solid #aaa;
+    }
+
+    nav {
+      background-color: #ffffff;
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 0;
+      justify-content: flex-end;
+      align-content: center;
+      align-items: center;
+    }
+
+    .menu__list {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu__item {
+      padding-left: 10px;
+    }
+
+    .menu__icons {
+      margin-left: 180px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .menu__icons__item {
+      margin-right: 10px;
+      padding-left: 10px;
+    }
+
+    .menu__link,
+    .nav-link {
+      font-size: 15px;
+      text-transform: uppercase;
+      padding: 0px 20px;
+      transition: all 0.2s;
+    }
+
+    footer {
+      /*                            general style for all pages >                          */
+      position: absolute;
+      background-color: black;
+      color: white;
+      padding: 10px 12px;
+      width: 100%;
+      margin-top: 100px;
+    }
+
+    .footer__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 85%;
+      margin: auto;
+    }
+
+    .company__name,
+    .about__us__text {
+      color: white;
+      text-align: center;
+    }
+
+    .company__info__item,
+    .authors__name {
+      padding-bottom: 20px;
+      text-align: center;
+    }
+
+    .footer__text {
+      border-top: 1px solid #eeeeee;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="/index.html">Jurekten_Jurekke</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../jurekten_jurekke/catalog.html">Catalog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../jurekten_jurekke/about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../jurekten_jurekke/account.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link cart-icon" href="../jurekten_jurekke/cart.html">
+
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="cart-icon">
+                    <path
+                      d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z" />
+                  </svg>
+                  <div class="item-count">0</div>
+                </a>
+
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">
+                <a href="../jurekten_jurekke/catalog.html">Search</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="row">
+    <div class="catalog-first" style="
+             background-image: url(../img/breadcrumb-bg.jpg);
+             background-size: cover;
+             width: 100%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+           ">
+      <h1 style="margin-top: 9%; margin-bottom: 9%; margin-left: 30px">
+        Catalog
+
+      </h1>
+    </div>
+
+  </div>
+  <hr />
+  <div class="container-fluid ml-5">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 ">
+        <form class="d-flex mt-3 mb-5" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-secondary" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+          </button>
+        </form>
+        <div class="list-group list-group-flush">
+          <button class="filter-button list-group-item list-group-item-action list-group-item-secondary" data-filter="all">All</button>
+          <button class="filter-button list-group-item list-group-item-action list-group-item-secondary" data-filter="sofa">Sofa</button>
+          <button class="filter-button list-group-item list-group-item-action list-group-item-secondary" data-filter="table">Table</button>
+          <button class="filter-button list-group-item list-group-item-action list-group-item-secondary" data-filter="light">Light</button>
+          <button class="filter-button list-group-item list-group-item-action list-group-item-secondary" data-filter="coat">Coat</button>
+          <button class="filter-button list-group-item list-group-item-action list-group-item-secondary" data-filter="Decor">Decor</button>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-8 col-sm-7 col-xs-3 ml-xs-5">
+        <div class="row">
+          <div class="container-fluid d-flex flex-row flex-wrap">
+
+
+
+
+            <!--Visible Products -->
+
+
+
+            <div class="card border-0 rounded-bottom product" style="width: 18rem; margin-right: 25px"
+              data-category="sofa">
+              <img src="../img/photo_2023-05-03_10-03-56.jpg" class="card-img-top" data-id="1" alt="product-1" />
+              <div class="card-body">
+                <h5 class="card-title">Afteroom Dining Chair</h5>
+                <p class="card-text">$102.84</p>
+                <p>
+                </p>
+                <button class="btn btn-outline-secondary add-to-cart-btn" style="width: 100%">Add To Cart</button>
+                <button class="btn btn-outline-secondary "  style="width: 100%"><a href="product/product_0.html">View</a></button>
+
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="card border-0 rounded-bottom product" style="width: 18rem; margin-right: 25px"
+              data-category="coat">
+              <img src="../img/product-0.jpg" class="card-img-top" alt="product-2" />
+              <div class="card-body">
+                <h5 class="card-title">Afteroom Coat Hanger</h5>
+                <p class="card-text">$183.76</p>
+                <p>
+
+                </p>
+                <div class="collapse" id="product-0">
+                  <div class="card card-body">
+                    A simple chest of drawers with a clean look that fits right
+                    in, in a bedroom or wherever you place it.
+                  </div>
+                </div>
+                <button class="btn btn-outline-secondary add-to-cart-btn" style="width: 100%">Add To Cart</button>
+                <button class="btn btn-outline-secondary" 
+                  style="width: 100%"><a href="product/product_0.html">View</a></button>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="card border-0 rounded-bottom product" style="width: 18rem; margin-right: 25px"
+              data-category="light">
+              <img src="../img/product-1.jpg" class="card-img-top" alt="product-3" />
+              <div class="card-body">
+                <h5 class="card-title">Afteroom Dining Chair</h5>
+                <p class="card-text">$102.84</p>
+                <p>
+
+                </p>
+                <div class="collapse">
+                  <div class="card card-body">
+                    Setting the bar as one of the loudest speakers in its class,
+                    the Kilburn is a compact, stout-hearted hero with a
+                    well-balanced audio which boasts a clear midrange and
+                    extended highs for a sound.
+                  </div>
+                </div>
+                <button class="btn btn-outline-secondary add-to-cart-btn" style="width: 100%">Add To Cart</button>
+                <button class="btn btn-outline-secondary modal-trigger" 
+                   style="width: 100%"><a href="product/product_1.html">View</a></button>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="card border-0 rounded-bottom product" style="width: 18rem; margin-right: 25px"
+              data-category="decor">
+              <img src="../img/product-2.jpg" class="card-img-top" alt="product-4" />
+              <div class="card-body">
+                <h5 class="card-title">Bobber Small Pendant Light</h5>
+                <p class="card-text">$120.05</p>
+                <p>
+
+                </p>
+                <div class="collapse" id="product-2">
+                  <div class="card card-body">
+                    Bright and bold pens, notebooks for every subject, stacks of
+                    colourful paper, and organisers to keep them all sorted… Who
+                    doesn't love a fully loaded desk? Kids are no exception!
+                  </div>
+                </div>
+                <button class="btn btn-outline-secondary add-to-cart-btn" style="width: 100%">Add To Cart</button>
+                <button class="btn btn-outline-secondary " 
+                   style="width: 100%"><a href="product/product_2.html">View</a></button>
+              </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="card border-0 rounded-bottom product" style="width: 18rem; margin-right: 25px"
+              data-category="table">
+              <img src="../img/product-3.jpg" class="card-img-top" alt="product-5" />
+              <div class="card-body">
+                <h5 class="card-title">Bollard Lamp</h5>
+                <p class="card-text">$141.36</p>
+                <p>
+
+                </p>
+                <div class="collapse" id="product-3">
+                  <div class="card card-body">
+                    Some placeholder content for the collapse component. This
+                    panel is hidden by default but revealed when the user
+                    activates the relevant trigger.
+                  </div>
+                </div>
+                <button class="btn btn-outline-secondary add-to-cart-btn" style="width: 100%">Add To Cart</button>
+                <button class="btn btn-outline-secondary " 
+                   style="width: 100%"><a href="product/product_3.html">View</a></button>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="card border-0 rounded-bottom product" style="width: 18rem; margin-right: 25px"
+              data-category="sofa">
+              <img src="../img/product-4.jpg" class="card-img-top" alt="product-6" />
+              <div class="card-body">
+                <h5 class="card-title">Circula Coffee Table</h5>
+                <p class="card-text">$239.00</p>
+                <p>
+
+                </p>
+                <div class="collapse" id="product-4">
+                  <div class="card card-body">
+                    With different styles to match your seating and furniture,
+                    our coffee tables keep everything you like to have close by.
+                  </div>
+                </div>
+                <button class="btn btn-outline-secondary add-to-cart-btn" style="width: 100%">Add To Cart</button>
+                <button class="btn btn-outline-secondary modal-trigger"
+                   style="width: 100%"><a href="#">View</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer>
+    <div class="container-fluid ">
+      <div class="row footer__inner">
+        <div class="col-12 col-md-6 company__info">
+          <ul class="company__info__inner">
+            <h1 class="company__name">Jurekten_Jurekke</h1>
+            <li class="company__info__item">
+              Astana, residential complex Nova sity 30/3
+            </li>
+            <li class="company__info__item">KZ +7 705 301 6564</li>
+            <li class="company__info__item">kassymkhanov.aizat@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 authors">
+          <div class="about__us">
+            <ul class="about__us__inner">
+              <h1 class="about__us__text">About Us</h1>
+              <li class="authors__name">Kassymkhanov Aizat</li>
+              <li class="authors__name">Rakhimov Dastan</li>
+              <li class="authors__name">Toqsanbai Abulkair</li>
+              <li class="authors__name">Mutashev Darkhan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="footer__text">Copyright &copy; 2023, Jurekten_Jurekke</p>
+    </div>
+  </footer>
+  <script src="../js/script-catalog.js"></script>
+
+</body>
+
+</html>
